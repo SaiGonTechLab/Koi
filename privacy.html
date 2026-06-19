@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính sách quyền riêng tư Koi</title>
+  <meta name="description" content="Chính sách quyền riêng tư cho ứng dụng hẹn hò Koi của Thanh Truc Solutions.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #3a1f1a;
+      --muted: #7a5a52;
+      --line: #f1d9d0;
+      --surface: #ffffff;
+      --wash: #fff5f2;
+      --coral: #ff5a5f;
+      --coral-dark: #d63a47;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #fff6f3 0%, #ffffff 42%);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--coral-dark);
+      font-weight: 700;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
+    }
+
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 64px;
+    }
+
+    header {
+      padding: 28px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .mark {
+      display: inline-grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--coral);
+      color: #ffffff;
+      font-weight: 900;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      color: var(--coral-dark);
+      font-size: clamp(32px, 4.4vw, 54px);
+      line-height: 1.08;
+    }
+
+    .lede {
+      max-width: 780px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin: 28px 0;
+    }
+
+    nav a {
+      display: block;
+      min-height: 48px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--ink);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(255, 90, 95, 0.06);
+    }
+
+    section {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--coral-dark);
+      font-size: 25px;
+      line-height: 1.22;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 14px; }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li { margin: 8px 0; }
+
+    .notice {
+      margin: 24px 0 0;
+      padding: 18px;
+      border: 1px solid #f5b3a1;
+      border-radius: 8px;
+      background: #fff1ec;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--surface);
+      box-shadow: 0 14px 30px rgba(255, 90, 95, 0.07);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .english {
+      background: var(--wash);
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    footer {
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .page { width: min(100% - 24px, 980px); padding-bottom: 44px; }
+      header { padding-top: 18px; }
+      h1 { font-size: 34px; }
+      .lede { font-size: 16px; }
+      nav { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="brand">
+        <span class="mark">Koi</span>
+        <span>Koi by Thanh Truc Solutions</span>
+      </div>
+      <h1>Chính sách quyền riêng tư</h1>
+      <p class="lede">Koi là ứng dụng hẹn hò giúp bạn tạo hồ sơ, khám phá người dùng khác, ghép đôi, nhắn tin và gọi video. Chính sách này giải thích dữ liệu nào được xử lý, khi nào dữ liệu rời khỏi thiết bị, và cách bạn kiểm soát dữ liệu của mình.</p>
+      <div class="meta" aria-label="Thông tin chính sách">
+        <span class="pill">Có hiệu lực: 19/06/2026</span>
+        <span class="pill">Ứng dụng Android và iOS</span>
+        <span class="pill">Chỉ dành cho người từ 18 tuổi</span>
+        <span class="pill">Không bán dữ liệu cá nhân</span>
+      </div>
+      <div class="notice">
+        <strong>Tóm tắt nhanh:</strong> Koi xử lý hồ sơ, ảnh, vị trí gần đúng và tùy chọn ghép đôi để gợi ý người phù hợp. Camera dùng khi bạn chụp ảnh, xác minh hoặc gọi video. Dữ liệu chỉ gửi lên backend, dịch vụ gọi video hoặc đối tác thanh toán khi cần vận hành tính năng bạn chọn, ghép đôi, kiểm tra mua hàng, đồng bộ tài khoản và bảo mật chống gian lận.
+      </div>
+    </header>
+
+    <nav aria-label="Mục lục">
+      <a href="#scope">Phạm vi</a>
+      <a href="#data">Dữ liệu xử lý</a>
+      <a href="#profile">Hồ sơ & ảnh</a>
+      <a href="#location">Vị trí & ghép đôi</a>
+      <a href="#chat">Nhắn tin & gọi video</a>
+      <a href="#billing">Mua coin & gói</a>
+      <a href="#sharing">Bên thứ ba</a>
+      <a href="#rights">Quyền của bạn</a>
+      <a href="#contact">Liên hệ</a>
+      <a href="#english">English summary</a>
+    </nav>
+
+    <section id="scope">
+      <h2>1. Phạm vi áp dụng</h2>
+      <p>Chính sách này áp dụng cho ứng dụng Koi trên Android, iOS, các API/backend Koi và các trang hỗ trợ chính thức do Thanh Truc Solutions vận hành. Khi bạn dùng Koi, bạn đồng ý để chúng tôi xử lý dữ liệu theo chính sách này.</p>
+      <p>Koi là dịch vụ hẹn hò chỉ dành cho người từ 18 tuổi trở lên. Chúng tôi không cố ý thu thập dữ liệu của người chưa đủ tuổi.</p>
+    </section>
+
+    <section id="data">
+      <h2>2. Dữ liệu Koi có thể xử lý</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Tài khoản và xác thực</h3>
+          <p>Email, tên hiển thị, trạng thái xác minh email, session theo thiết bị, token đăng nhập, mã xác minh và mã đặt lại mật khẩu. Mật khẩu và token nhạy cảm được lưu dưới dạng hash hoặc dạng bảo vệ tương đương trên thiết bị và backend.</p>
+        </article>
+        <article class="card">
+          <h3>Hồ sơ hẹn hò</h3>
+          <p>Tên, tuổi/ngày sinh, giới tính, xu hướng tìm kiếm, ảnh, mô tả bản thân, sở thích và các tùy chọn ghép đôi (khoảng cách, độ tuổi mong muốn). Đây là dữ liệu bạn chủ động cung cấp để người khác có thể thấy.</p>
+        </article>
+        <article class="card">
+          <h3>Hoạt động & ghép đôi</h3>
+          <p>Lượt thích/bỏ qua, kết đôi (match), tin nhắn, cuộc gọi, báo cáo/chặn người dùng, số dư coin, lịch sử quà tặng và log chẩn đoán cần thiết để sửa lỗi và chống gian lận.</p>
+        </article>
+        <article class="card">
+          <h3>Thiết bị & vị trí</h3>
+          <p>Loại thiết bị, hệ điều hành, mã thông báo thông báo đẩy, và vị trí gần đúng (nếu bạn cấp quyền) để gợi ý người dùng quanh khu vực. Bạn có thể tắt quyền vị trí bất cứ lúc nào.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="profile">
+      <h2>3. Hồ sơ, ảnh và camera</h2>
+      <p>Hồ sơ và ảnh bạn tải lên được hiển thị cho người dùng khác trong phạm vi Koi để phục vụ mục đích ghép đôi. Hãy cân nhắc trước khi đăng thông tin nhạy cảm.</p>
+      <ul>
+        <li><strong>Camera và thư viện ảnh:</strong> chỉ được dùng khi bạn chụp ảnh hồ sơ, tải ảnh lên, xác minh khuôn mặt hoặc gọi video. Koi không âm thầm bật camera khi bạn không yêu cầu.</li>
+        <li><strong>Hiển thị hồ sơ:</strong> ảnh và thông tin hồ sơ công khai trong app có thể được người dùng khác xem; bạn có thể ẩn hồ sơ hoặc giới hạn hiển thị trong cài đặt.</li>
+        <li><strong>Kiểm duyệt:</strong> ảnh và nội dung có thể được kiểm duyệt tự động hoặc thủ công để phát hiện nội dung vi phạm, lừa đảo hoặc tài khoản giả.</li>
+      </ul>
+    </section>
+
+    <section id="location">
+      <h2>4. Vị trí và thuật toán ghép đôi</h2>
+      <p>Nếu bạn cấp quyền vị trí, Koi dùng vị trí gần đúng để gợi ý người dùng trong khoảng cách bạn chọn và sắp xếp danh sách khám phá. Chúng tôi không hiển thị địa chỉ chính xác của bạn cho người khác.</p>
+      <ul>
+        <li>Bạn có thể từ chối quyền vị trí; khi đó tính năng gợi ý theo khoảng cách có thể bị hạn chế hoặc dùng vị trí bạn nhập thủ công.</li>
+        <li>Thuật toán gợi ý dựa trên tùy chọn của bạn (độ tuổi, khoảng cách, giới tính) và hoạt động trong app, không dựa trên việc bán dữ liệu cho bên thứ ba.</li>
+      </ul>
+    </section>
+
+    <section id="chat">
+      <h2>5. Nhắn tin và gọi video</h2>
+      <p>Koi cho phép nhắn tin và gọi video giữa những người đã ghép đôi. Cuộc gọi video sử dụng công nghệ WebRTC để truyền âm thanh/hình ảnh theo thời gian thực.</p>
+      <ul>
+        <li>Nội dung tin nhắn được lưu để đồng bộ hội thoại giữa các thiết bị và hỗ trợ kiểm duyệt khi có báo cáo vi phạm.</li>
+        <li>Cuộc gọi video truyền trực tiếp giữa các bên qua máy chủ trung chuyển khi cần (TURN/STUN); Koi không lưu lại nội dung cuộc gọi trừ khi pháp luật yêu cầu hoặc để xử lý báo cáo.</li>
+        <li>Bạn có thể chặn hoặc báo cáo người dùng bất cứ lúc nào; chúng tôi có thể lưu dữ liệu liên quan để xử lý báo cáo và bảo vệ cộng đồng.</li>
+      </ul>
+    </section>
+
+    <section id="billing">
+      <h2>6. Mua coin, gói Gold/VIP và kiểm tra quyền lợi</h2>
+      <p>Koi cung cấp gói đăng ký (Gold, VIP) và gói coin để dùng cho các tính năng trả phí. Giao dịch được xử lý bởi Google Play Billing hoặc Apple App Store.</p>
+      <p>Koi nhận thông tin cần thiết (mã giao dịch, purchase token/receipt, trạng thái quyền lợi) để xác minh giao dịch và cập nhật số dư coin hoặc gói của bạn. Chúng tôi <strong>không</strong> nhận hoặc lưu số thẻ ngân hàng đầy đủ. Webhook/thông báo từ nền tảng được xác thực trước khi backend cập nhật trạng thái.</p>
+    </section>
+
+    <section id="sharing">
+      <h2>7. Chia sẻ dữ liệu với bên thứ ba</h2>
+      <p>Koi không bán dữ liệu cá nhân. Chúng tôi chỉ chia sẻ dữ liệu với nhà cung cấp cần thiết để vận hành app hoặc khi pháp luật yêu cầu.</p>
+      <ul>
+        <li><strong>Hạ tầng máy chủ & lưu trữ:</strong> lưu trữ hồ sơ, ảnh và dữ liệu hội thoại trên hạ tầng backend của Koi.</li>
+        <li><strong>Dịch vụ gọi video (WebRTC/TURN/STUN):</strong> trung chuyển kết nối âm thanh/hình ảnh khi gọi video.</li>
+        <li><strong>Google Play và Apple App Store:</strong> xử lý thanh toán, receipt và trạng thái subscription/coin.</li>
+        <li><strong>Dịch vụ thông báo đẩy:</strong> gửi thông báo về tin nhắn, lượt thích và kết đôi mới.</li>
+        <li><strong>Nhà cung cấp email:</strong> gửi mã xác minh email, đặt lại mật khẩu và thông báo cần thiết.</li>
+      </ul>
+    </section>
+
+    <section id="retention">
+      <h2>8. Lưu trữ và bảo mật</h2>
+      <p>Koi lưu dữ liệu trong thời gian cần thiết để cung cấp dịch vụ, đáp ứng nghĩa vụ pháp lý, bảo vệ hệ thống và chống gian lận. Hồ sơ, tin nhắn hoặc ảnh có thể được xóa sớm hơn nếu bạn xóa trong app hoặc gửi yêu cầu hỗ trợ.</p>
+      <ul>
+        <li>Dữ liệu truyền qua mạng được bảo vệ bằng HTTPS/TLS khi triển khai production.</li>
+        <li>Backend áp dụng phân quyền theo tài khoản/session; người dùng khác không được đọc tin nhắn hoặc dữ liệu riêng tư của bạn.</li>
+        <li>Token xác minh, reset mật khẩu, purchase token và dữ liệu nhạy cảm trên thiết bị được bảo vệ bằng mã hóa (EncryptedSharedPreferences), hash, ký số hoặc cơ chế kiểm soát tương đương.</li>
+      </ul>
+    </section>
+
+    <section id="rights">
+      <h2>9. Quyền lựa chọn và quyền của bạn</h2>
+      <p>Tùy nơi bạn sống, bạn có thể có quyền truy cập, sửa, xuất, xóa, hạn chế xử lý hoặc phản đối việc xử lý dữ liệu cá nhân. Ngay trong app, Koi hỗ trợ chỉnh sửa hồ sơ, ẩn hồ sơ, chặn/báo cáo người dùng, đăng xuất và xóa tài khoản.</p>
+      <ul>
+        <li>Bạn có thể không cấp quyền camera/vị trí/thông báo; khi đó các tính năng phụ thuộc quyền đó sẽ bị hạn chế.</li>
+        <li>Bạn có thể yêu cầu xóa tài khoản và dữ liệu gắn với tài khoản, trừ phần chúng tôi cần giữ để chống gian lận, bảo mật, tuân thủ pháp luật hoặc xử lý giao dịch.</li>
+        <li>Bạn có thể liên hệ <a href="mailto:support@saveapp.cc">support@saveapp.cc</a> để thực hiện các quyền trên.</li>
+      </ul>
+    </section>
+
+    <section id="children">
+      <h2>10. Độ tuổi và trẻ em</h2>
+      <p>Koi chỉ dành cho người từ 18 tuổi trở lên. Chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ vị thành niên. Nếu chúng tôi phát hiện một tài khoản thuộc về người chưa đủ tuổi, tài khoản đó có thể bị khóa và dữ liệu liên quan bị xóa. Nếu bạn là phụ huynh/người giám hộ và tin rằng trẻ đã dùng Koi, vui lòng liên hệ để chúng tôi xử lý.</p>
+    </section>
+
+    <section id="changes">
+      <h2>11. Thay đổi chính sách</h2>
+      <p>Chúng tôi có thể cập nhật chính sách này khi Koi thay đổi tính năng, nhà cung cấp hoặc yêu cầu pháp lý. Phiên bản mới sẽ được đăng trên trang này cùng ngày hiệu lực mới. Nếu thay đổi quan trọng, chúng tôi sẽ cố gắng thông báo trong app hoặc qua kênh phù hợp.</p>
+    </section>
+
+    <section id="contact">
+      <h2>12. Liên hệ</h2>
+      <p>Đơn vị vận hành: <strong>Thanh Truc Solutions</strong>.</p>
+      <p>Email hỗ trợ và quyền riêng tư: <a href="mailto:support@saveapp.cc">support@saveapp.cc</a>.</p>
+      <p>GitHub: <a href="https://github.com/SaiGonTechLab/Koi">https://github.com/SaiGonTechLab/Koi</a>.</p>
+    </section>
+
+    <section id="english" class="english" lang="en">
+      <h2>English summary</h2>
+      <p>This Privacy Policy applies to the Koi Android and iOS dating apps, backend APIs, and official support pages operated by Thanh Truc Solutions. Koi lets adult users create profiles, discover others, match, chat, and make video calls.</p>
+      <p>We do not sell personal data. Koi is for users aged 18 and older. We process profile data, photos, approximate location, and matching preferences to suggest relevant people. Camera is used only when you take photos, verify, or make video calls. Data may be sent to Koi backend services, WebRTC/TURN relay servers, Google Play, Apple App Store, push notification and email providers only when needed to provide the feature you request, match users, verify purchases, operate accounts, and maintain security.</p>
+      <p>You may request access, correction, deletion, or export of your data, or delete your account, by contacting <a href="mailto:support@saveapp.cc">support@saveapp.cc</a>. Some records may be retained where required for security, fraud prevention, legal compliance, or transaction handling.</p>
+      <p>Effective date: June 19, 2026.</p>
+    </section>
+
+    <footer>
+      <p>© 2026 Thanh Truc Solutions. Koi Privacy Policy.</p>
+    </footer>
+  </main>
+</body>
+</html>

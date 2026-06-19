@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koi - Điều khoản & Quyền riêng tư</title>
+  <meta name="description" content="Trang chính thức về Điều khoản dịch vụ và Chính sách quyền riêng tư của ứng dụng hẹn hò Koi.">
+  <style>
+    :root {
+      --ink: #3a1f1a;
+      --muted: #7a5a52;
+      --line: #f1d9d0;
+      --coral: #ff5a5f;
+      --coral-dark: #d63a47;
+      --wash: #fff5f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      min-height: 100vh;
+      margin: 0 auto;
+      display: grid;
+      align-content: center;
+      gap: 28px;
+      padding: 48px 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .mark {
+      display: inline-grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--coral);
+      color: #ffffff;
+      font-weight: 900;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      color: var(--coral-dark);
+      font-size: clamp(36px, 6vw, 72px);
+      line-height: 1.04;
+    }
+
+    p {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      color: var(--coral-dark);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .primary {
+      background: var(--coral);
+      border-color: var(--coral);
+      color: #ffffff;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .summary div {
+      min-height: 116px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--wash);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <span class="mark">Koi</span>
+      <span>Koi by Thanh Truc Solutions</span>
+    </div>
+    <h1>Điều khoản & Quyền riêng tư của Koi</h1>
+    <p>Trang này lưu Điều khoản dịch vụ và Chính sách quyền riêng tư chính thức cho ứng dụng hẹn hò Koi trên Android và iOS. Nội dung bao gồm hồ sơ, ảnh, vị trí, ghép đôi, nhắn tin, gọi video, mua coin và gói Gold/VIP.</p>
+    <div class="actions">
+      <a class="primary" href="privacy.html">Chính sách quyền riêng tư</a>
+      <a href="terms.html">Điều khoản dịch vụ</a>
+      <a href="https://github.com/SaiGonTechLab/Koi">Repo GitHub</a>
+    </div>
+    <section class="summary" aria-label="Tóm tắt">
+      <div><strong>Không bán dữ liệu cá nhân.</strong><br>Dữ liệu chỉ được xử lý để vận hành app, ghép đôi, bảo mật, kiểm tra giao dịch hoặc khi bạn đồng ý.</div>
+      <div><strong>Bạn kiểm soát hồ sơ.</strong><br>Có thể chỉnh sửa, ẩn, xuất hoặc xóa hồ sơ, ảnh và tài khoản bất cứ lúc nào.</div>
+      <div><strong>Chỉ dành cho người từ 18 tuổi.</strong><br>Koi là dịch vụ hẹn hò dành riêng cho người trưởng thành; không dành cho trẻ vị thành niên.</div>
+    </section>
+  </main>
+</body>
+</html>
